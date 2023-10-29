@@ -1,11 +1,11 @@
 @font-face {
-  font-family: "Montserrat";
+    font-family: "Montserrat";
     src: url("/assets/Montserrat-VariableFont_wght.ttf");
 }
 
 :root {
-  font-family: "Montserrat";
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #171F23;
+    font-family: "Montserrat";
+    color-scheme: light dark;
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #171f23;
 }
