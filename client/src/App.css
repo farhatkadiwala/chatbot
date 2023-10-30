@@ -15,11 +15,22 @@ a {
   text-decoration: none;
 }
 
-.top-left-img {
+.top-left {
+  position: absolute;
+  top: -25%;
+  left: -25%;
+}
+
+.container {
   display: flex;
-  width: 600px;
-  height: 600px;
-  justify-content: center;
-  align-items: center;
-  flex-shrink: 0;
+  height: 100%;
+  padding: 5rem;
+}
+
+.row {
+  flex-direction: row;
+}
+
+.col {
+  flex-direction: column;
 }

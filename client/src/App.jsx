@@ -1,20 +1,18 @@
 import "./App.css";
+import "./assets/top-left.svg";
 
 function App() {
-  styles = {
-    flex: flexbox,
-    left: left,
-  };
-
   return (
     <>
-      <div
-        className="container"
-        style={{ display: styles.flex, flexDirection: styles.left }}
-      >
-        <p>
-          <a href="#"> find.your.name </a>
-        </p>
+      <div className="container">
+        <div className="row">
+          <img src="./assets/top-left.png" className="top-left"></img>
+          <div className="col">
+            <p>
+              <a href="#"> find.your.name </a>
+            </p>
+          </div>
+        </div>
       </div>
     </>
   );
