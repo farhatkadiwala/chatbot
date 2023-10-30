@@ -15,16 +15,18 @@ a {
   text-decoration: none;
 }
 
-.top-left {
-  position: absolute;
-  top: -25%;
-  left: -25%;
-}
-
 .container {
   display: flex;
   height: 100%;
   padding: 5rem;
+}
+
+.top-left {
+  width: 600px;
+  height: 600px;
+  position: absolute;
+  top: -50%;
+  left: -30%;
 }
 
 .row {

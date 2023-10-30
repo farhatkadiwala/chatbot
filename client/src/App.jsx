@@ -1,15 +1,15 @@
 import "./App.css";
-import "./assets/top-left.svg";
+import img from "./assets/top-left.svg";
 
 function App() {
   return (
     <>
       <div className="container">
         <div className="row">
-          <img src="./assets/top-left.png" className="top-left"></img>
+          <img src={img} className="top-left" alt="image" />
           <div className="col">
             <p>
-              <a href="#"> find.your.name </a>
+              <a href={"#"}> find.your.name </a>
             </p>
           </div>
         </div>
