@@ -36,3 +36,10 @@ a {
 .col {
   flex-direction: column;
 }
+
+.planet {
+  position: fixed;
+  /* transform: rotate(-15deg); */
+  bottom: 0%;
+  right: 0%;
+}
