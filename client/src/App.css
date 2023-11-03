@@ -37,7 +37,7 @@ a {
 
 .row {
   flex-direction: row;
-  /* height: min-content; */
+  height: min-content;
 }
 
 .col {
@@ -48,8 +48,8 @@ a {
   background-color: rgba(23, 31, 35, 0.99);
   position: sticky;
   top: 0rem;
-  height: 100px;
-  box-shadow: gray;
+  height: 60px;
+  text-align: right;
 }
 
 .planet {
@@ -81,4 +81,31 @@ a {
   font-family: Sail;
   font-size: 240px;
   font-weight: 400;
+}
+
+.search {
+  position: relative;
+  margin-top: -16rem;
+}
+
+.search-input {
+  font-family: Montserrat;
+  font-size: 16px;
+  padding: 1rem;
+  border-radius: 8px 0px 0px 8px;
+  border: 0.847px solid #fff;
+  background-color: #171f23;
+}
+
+.search-button {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 13px 20px;
+  border: white;
+  border-radius: 0px 8px 8px 0px;
+  background: #fff;
+  color: #000;
+  position: relative;
+  /* margin-right: 3rem; */
 }

@@ -13,10 +13,7 @@ function App() {
         </div>
 
         <div className="row">
-          <p className="find-the" style={{ marginTop: "6rem" }}>
-            {" "}
-            Find the{" "}
-          </p>
+          <p className="find-the">Find the</p>
         </div>
 
         <div className="row">
@@ -29,19 +26,28 @@ function App() {
               of your
             </p>
           </div>
+        </div>
 
-          <div>
-            <p
-              className="name-word"
-              style={{
-                marginTop: "-14rem",
-                position: "relative",
-                marginLeft: "10rem",
-              }}
-            >
-              name
-            </p>
-          </div>
+        <div className="row">
+          <p
+            className="name-word"
+            style={{
+              marginTop: "-18rem",
+              position: "relative",
+              marginLeft: "10rem",
+            }}
+          >
+            name
+          </p>
+        </div>
+
+        <div className="row search">
+          <form>
+            <input type="text" className="search-input"></input>
+            <button type="submit" className="search-button">
+              Search
+            </button>
+          </form>
         </div>
 
         <div className="row">
