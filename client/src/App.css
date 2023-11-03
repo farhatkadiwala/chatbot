@@ -37,11 +37,19 @@ a {
 
 .row {
   flex-direction: row;
-  height: min-content;
+  /* height: min-content; */
 }
 
 .col {
   flex-direction: column;
+}
+
+.title-link {
+  background-color: rgba(23, 31, 35, 0.99);
+  position: sticky;
+  top: 0rem;
+  height: 100px;
+  border-bottom: 1px white;
 }
 
 .planet {

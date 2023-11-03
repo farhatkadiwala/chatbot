@@ -6,7 +6,7 @@ function App() {
   return (
     <>
       <div className="container">
-        <div className="row">
+        <div className="title-link">
           <p>
             <a href={"#"}> find.your.name </a>
           </p>
@@ -24,14 +24,23 @@ function App() {
         </div>
 
         <div className="row">
-          <div className="col">
+          <div>
             <p className="find-the" style={{ marginTop: "-10rem" }}>
               of your
             </p>
           </div>
 
-          <div className="col">
-            <p className="name-word">name</p>
+          <div>
+            <p
+              className="name-word"
+              style={{
+                marginTop: "-14rem",
+                position: "relative",
+                marginLeft: "10rem",
+              }}
+            >
+              name
+            </p>
           </div>
         </div>
 
