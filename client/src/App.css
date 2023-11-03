@@ -39,6 +39,8 @@ a {
 
 .planet {
   position: fixed;
+  height:350px;
+  width: 350px;
   bottom: 0%;
   right: 0%;
 }
