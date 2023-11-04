@@ -90,10 +90,10 @@ a {
 
 .search-input {
   font-family: Montserrat;
-  font-size: 16px;
+  font-size: 15px;
   padding: 1rem;
   border-radius: 8px 0px 0px 8px;
-  border: 0.847px solid #fff;
+  border: 1px solid #fff;
   background-color: #171f23;
 }
 
@@ -101,11 +101,10 @@ a {
   font-family: Montserrat;
   font-size: 16px;
   font-weight: 400;
-  padding: 13px 20px;
-  border: white;
+  padding: 12px 20px;  
+  border: 1px solid #fff;
   border-radius: 0px 8px 8px 0px;
   background: #fff;
   color: #000;
   position: relative;
-  /* margin-right: 3rem; */
 }

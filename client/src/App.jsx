@@ -1,14 +1,22 @@
 import "./App.css";
 import topLeft from "./assets/top-left.svg";
 import planet from "./assets/planet.svg";
+import { useRef } from "react";
 
 function App() {
+  const inputRef = useRef(null);
+
+  function handleClick() {
+    return inputRef.current.value;
+  }
+
   return (
     <>
       <div className="container">
         <div className="title-link">
           <p>
             <a href={"#"}> find.your.name </a>
+            <p> {mess} </p>
           </p>
         </div>
 
@@ -43,8 +51,12 @@ function App() {
 
         <div className="row search">
           <form>
-            <input type="text" className="search-input"></input>
-            <button type="submit" className="search-button">
+            <input type="text" className="search-input" ref={inputRef}></input>
+            <button
+              type="button"
+              className="search-button"
+              onClick={handleClick}
+            >
               Search
             </button>
           </form>
