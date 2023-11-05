@@ -1,15 +1,22 @@
 import "./App.css";
 import topLeft from "./assets/top-left.svg";
 import planet from "./assets/planet.svg";
-import { useRef, useState } from "react";
-import useNavigate from "react-router-dom";
+import { useRef } from "react";
+// import useNavigate from "react-router-dom";
 
 function App() {
   const inputRef = useRef(null);
 
   function handleSubmit(event) {
-    event.preventDefault();
-    const data = fetch("")
+    const data = fetch("http://localhost:8080", {
+      method: "POST",
+      headers: {
+        "Content-type": "application/json",
+      },
+      body: JSON.stringify({
+        prompt: data.get("prompt"),
+      }),
+    });
   }
 
   return (
@@ -51,14 +58,7 @@ function App() {
         </div>
 
         <div className="row search">
-          <form
-            onSubmit={handleSubmit}
-            onKeyUp={(e) => {
-              if (e.keyCode === 13) {
-                handleSubmit(e);
-              }
-            }}
-          >
+          <form onSubmit={handleSubmit}>
             <input type="text" className="search-input" ref={inputRef}></input>
             <button type="submit" className="search-button">
               Search
