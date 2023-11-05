@@ -1,7 +1,7 @@
 import express from "express";
 import * as dotenv from "dotenv";
-import cors from "cors";
-import { Configuration, OpenAIApi } from "openai";
+import Configuration from "openai";
+import OpenAIApi from "openai";
 
 dotenv.config();
 
@@ -12,7 +12,6 @@ const configuration = new Configuration({
 const openai = new OpenAIApi(configuration);
 
 const app = express();
-// app.use(cors());
 app.use(express.json());
 
 app.listen(8080, () => console.log("Server started on http://localhost:8080"));
@@ -45,4 +44,3 @@ app.post("/", (req, res) => {
     res.status(500).send(error || "Something went wrong");
   }
 });
-

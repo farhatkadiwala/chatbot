@@ -7,9 +7,9 @@ import useNavigate from "react-router-dom";
 function App() {
   const inputRef = useRef(null);
 
-  function handleSubmit(event, async) {
+  function handleSubmit(event) {
     event.preventDefault();
-    const data = new FormData(form);
+    const data = fetch("")
   }
 
   return (
