@@ -1,12 +1,15 @@
 import "./App.css";
 import topLeft from "./assets/top-left.svg";
 import planet from "./assets/planet.svg";
-import { useRef } from "react";
+import { useRef, useState } from "react";
+import useNavigate from 'react-router-dom'
 
 function App() {
+  const [message, setMessage] = useState("");
   const inputRef = useRef(null);
 
-  function handleClick() {
+  function handleClick(event) {
+    event;
     return inputRef.current.value;
   }
 
@@ -16,7 +19,6 @@ function App() {
         <div className="title-link">
           <p>
             <a href={"#"}> find.your.name </a>
-            <p> {mess} </p>
           </p>
         </div>
 
@@ -50,13 +52,16 @@ function App() {
         </div>
 
         <div className="row search">
-          <form>
+          <form
+            onSubmit={handleClick}
+            onKeyUp={(e) => {
+              if (e.keyCode === 13) {
+                handleClick(e);
+              }
+            }}
+          >
             <input type="text" className="search-input" ref={inputRef}></input>
-            <button
-              type="button"
-              className="search-button"
-              onClick={handleClick}
-            >
+            <button type="submit" className="search-button">
               Search
             </button>
           </form>
