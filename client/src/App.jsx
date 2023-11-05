@@ -2,7 +2,7 @@ import "./App.css";
 import topLeft from "./assets/top-left.svg";
 import planet from "./assets/planet.svg";
 import { useRef, useState } from "react";
-import useNavigate from 'react-router-dom'
+import useNavigate from "react-router-dom";
 
 function App() {
   const [message, setMessage] = useState("");
