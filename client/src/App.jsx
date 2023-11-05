@@ -5,12 +5,11 @@ import { useRef, useState } from "react";
 import useNavigate from "react-router-dom";
 
 function App() {
-  const [message, setMessage] = useState("");
   const inputRef = useRef(null);
 
-  function handleClick(event) {
-    event;
-    return inputRef.current.value;
+  function handleSubmit(event, async) {
+    event.preventDefault();
+    const data = new FormData(form);
   }
 
   return (
@@ -53,10 +52,10 @@ function App() {
 
         <div className="row search">
           <form
-            onSubmit={handleClick}
+            onSubmit={handleSubmit}
             onKeyUp={(e) => {
               if (e.keyCode === 13) {
-                handleClick(e);
+                handleSubmit(e);
               }
             }}
           >
