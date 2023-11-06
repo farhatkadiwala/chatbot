@@ -1,29 +1,20 @@
 import React from "react";
 import "../App.css";
 import { useNavigate } from "react-router-dom";
-import { useState } from "react";
 
 const Input = () => {
   const navigate = useNavigate();
-  const [name, setName] = useState("");
 
   return (
     <>
-      <div className="col" style={{ marginTop: "-10rem" }}>
+      <div className="row" style={{ marginTop: "-16rem" }}>
         <form
           onSubmit={() => {
-            navigate("/chat", { state: { name: name } });
+            navigate("/chat");
           }}
         >
-          <input
-            type="text"
-            className="search-input"
-            placeholder="Farhat"
-            name="name"
-            onChange={(event) => setName(event.target.value)}
-          ></input>
           <button type="submit" className="search-button">
-            Search
+            Begin
           </button>
         </form>
       </div>

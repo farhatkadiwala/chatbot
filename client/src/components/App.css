@@ -37,7 +37,7 @@ a {
 
 .row {
   flex-direction: row;
-  height: min-content;
+  height: fit-content;
 }
 
 .col {
@@ -91,9 +91,9 @@ a {
 
 .search-input {
   font-family: Montserrat;
-  font-size: 15px;
+  font-size: 12px;
   padding: 1rem;
-  border-radius: 8px 0px 0px 8px;
+  border-radius: 8px;
   border: 1px solid #fff;
   background-color: #171f23;
 }
@@ -101,17 +101,23 @@ a {
 .search-button {
   font-family: Montserrat;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 600;
   padding: 12px 20px;
   border: 1px solid #fff;
-  border-radius: 0px 8px 8px 0px;
+  border-radius: 8px;
   background: #fff;
-  color: #000;
+  color: #171f23;
 }
 
-
-.response{
+.response {
   font-family: Montserrat;
-  font-size: 18px;
+  font-size: 14px;
+  justify-self: center;
+  text-align: center;
+  padding: 2rem;
   color: #fff;
+  width: 500px;
+  height: 600px;
+  border-radius: 24px;
+  background: rgba(0, 0, 0, 0.3);
 }
