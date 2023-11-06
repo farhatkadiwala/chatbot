@@ -1,10 +1,14 @@
 import React from "react";
-import ".../App.css";
+import "../App.css";
 
-export default function Navbar() {
-  <div className="title-link">
-    <p>
-      <a href={"#"}> find.your.name </a>
-    </p>
-  </div>;
-}
+const Navbar = () => {
+  return (
+    <div className="title-link">
+      <p>
+        <a href={"/home"}> find.your.name </a>
+      </p>
+    </div>
+  );
+};
+
+export default Navbar;
