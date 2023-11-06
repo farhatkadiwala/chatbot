@@ -2,6 +2,7 @@ import express from "express";
 import * as dotenv from "dotenv";
 import Configuration from "openai";
 import OpenAIApi from "openai";
+// import cors from "cors";
 
 dotenv.config();
 
@@ -24,7 +25,7 @@ app.get("/", (req, res) => {
 
 app.post("/", (req, res) => {
   try {
-    const prompt = req.body.prompt;
+    const prompt = req.body.name;
 
     const response = openai.createCompletion({
       model: "text-davinci-003",
@@ -37,10 +38,11 @@ app.post("/", (req, res) => {
     });
 
     res.status(200).send({
-      bot: response.data.choices[0].text,
+      dataReceived: response.data.choices[0].text,
     });
   } catch (error) {
     console.error(error);
     res.status(500).send(error || "Something went wrong");
   }
 });
+
